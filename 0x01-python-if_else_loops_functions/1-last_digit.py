@@ -8,5 +8,4 @@ if last_dig == 0:
     p = 'and is 0'
 if last_dig < 6 and last_dig != 0:
     p = 'and is less than 6 and not 0'
-print(f'Last digit of {number} is {last_dig} \
-        {p}')
+print(f'Last digit of {number} is {last_dig} \{p}')
