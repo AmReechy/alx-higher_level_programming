@@ -2,6 +2,7 @@
 import random
 number = random.randint(-10000, 10000)
 last_dig = int(str(number)[-1])
+last_dig = last_dig if number >= 0 else (-1 * last_dig)
 if last_dig > 5:
     p = 'and is greater than 5'
 if last_dig == 0:
