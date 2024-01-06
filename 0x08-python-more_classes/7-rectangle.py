@@ -63,7 +63,7 @@ class Rectangle:
             return string
         for i in range(self.height):
             for j in range(self.width):
-                string += str(print_symbol)
+                string += str(self.print_symbol)
             else:
                 string += '\n'
         return string
