@@ -66,6 +66,4 @@ class Rectangle:
         return string
 
     def __repr__(self):
-        return "Rectangle({:d},{:d})".format(self.width, self.height)
-
-print("from 4-rectangle")
+        return f"Rectangle({self.width},{self.height})"
