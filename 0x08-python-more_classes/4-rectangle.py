@@ -66,7 +66,6 @@ class Rectangle:
         return string
 
     def __repr__(self):
-        """returns an official string representation"""
         return "Rectangle({:d},{:d})".format(self.width, self.height)
 
 print("from 4-rectangle")
