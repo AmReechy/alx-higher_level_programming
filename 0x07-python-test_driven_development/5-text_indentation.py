@@ -25,7 +25,8 @@ def text_indentation(text):
     new_text = text
     for c in ".:?":
         new_text = new_text.replace(c, f"{c}\n\n")
-    text_to_list = text.splitlines(keepends=True)
+    text_to_list = new_text.splitlines(keepends=True)
     space_removed = [t.strip(' \t') for t in text_to_list]
-    text = "".join(space_removed)
+    final_text = [("<BLANKLINE>" + t if t.isspace() else t) for t in space_removed]
+    text = "".join(final_text)
     print(text)
