@@ -10,9 +10,9 @@ class MyInt(int):
     def __eq__(self, other):
         """Custom method for equality check"""
         if isinstance(other, (int,MyInt)):
-            return self != other
+            return self.real != other.real
 
     def __ne__(self, other):
         """Custom method for inequality check"""
         if isinstance(other, (int,MyInt)):
-            return self == other
+            return self.real == other.real
