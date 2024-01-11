@@ -5,7 +5,7 @@ Basegeometry Class
 """
 
 
-BaseGeometry = __import__("7-base_geometry").BaseGeomety
+BaseGeometry = __import__("7-base_geometry").BaseGeometry
 
 class Rectangle(BaseGeometry):
     """This is a Rectangle class which subclasses
