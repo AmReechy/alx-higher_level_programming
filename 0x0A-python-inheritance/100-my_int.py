@@ -9,8 +9,10 @@ class MyInt(int):
     opposite of their normal behaviour"""
     def __eq__(self, other):
         """Custom method for equality check"""
-        return self != other
+        if isinstance(other, (int,MyInt)):
+            return self != other
 
     def __ne__(self, other):
         """Custom method for inequality check"""
-        return self == other
+        if isinstance(other, (int,MyInt)):
+            return self == other
