@@ -24,4 +24,4 @@ class Rectangle(BaseGeometry):
 
     def __str__(self):
         """Method that return a string representation of the object"""
-        return f"[Rectangle] {width}/{height}"
+        return f"[{str(self.__class__.__name__)}] {width}/{height}"
